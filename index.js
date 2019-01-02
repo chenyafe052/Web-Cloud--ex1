@@ -12,7 +12,7 @@ app.use(morgan('dev'))
 
 
 app.all('*', (req, res, next) => {
-    console.log("Game cancellations by Chen Yafe")
+    res.send("Game cancellations by Chen Yafe")
     next()
 })
 
